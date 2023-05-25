@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.background {
+    background-image: url(../images/serfing.png);
+    max-width: 100%;
+    min-width: 10%;
+    width: 1920px;
+    max-height: 100%;
+    min-height: 10%;
+    height: 980px;
+}
+
+body {
+    left: 0px;
+    top: 0px;
+    user-select: none;
+    overflow: hidden;
+}
+
+.gradient {
+    display: inline-block;
+    max-width: 100%;
+    min-width: 10%;
+    width: 1920px;
+    height: 491px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+}
+
+.navbar {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    position: relative;
+    font-size: 13pt;
+    top: 15px;
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    color: #ffffff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-family: 'Roboto';
+}
+
+nav li a {
+    box-sizing: border-box;
+}
+
+nav li:last-child a {
+    border-right: 0;
+}
+
+nav a:hover, nav a:active {
+    border-bottom: 2px solid #0b65ec;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    width: 55%;
+    height: 100px;
+}
+
+.w1 {
+    position: relative;
+    top: -75px;
+    left: 40px;
+
+    font-style: normal;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 40px;
+
+    color: #ffffffff;
+}
+
+.w2 {
+    position: relative;
+    top: -48px;
+    left: -28px;
+
+    font-style: normal;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 40px;
+
+    color: #ffffffff;
+}
+
+.text {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-family: 'Raleway';
+    font-size: 220px;
+    font-style: normal;
+    color: #000000;
+}
+
+
+.text p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    color: #000000;
+}
+
+

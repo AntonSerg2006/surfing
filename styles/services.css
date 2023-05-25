@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.home img {
+    width: 40px;
+    padding: 10px;
+    user-select: none;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-style: normal;
+    font-family: 'Raleway';
+    font-size: 40px;
+}
+
+.line { 
+    position: relative;
+    top: 60px;
+
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    font-style: normal;
+    font-family: 'Raleway';
+    user-select: none;
+    color: rgb(0, 117, 226);
+}
+
+.text {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-heading {
+    top: 250px;
+    left: 400px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.info-text {
+    width: 400px;
+    top: 350px;
+    left: 280px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.info-text:hover {
+    cursor: pointer;
+
+    background-color: rgba(151, 209, 248, 0.521);
+    border-radius: 10px;
+}
+
+.sun {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 55px;
+    left: -55px;
+    user-select: none;
+}
+
+.ticket {
+    position: relative;
+    width: 50px;
+    top: 65px;
+    left: -55px;
+    user-select: none;
+}
+
+
+.surfing {
+    position: relative;
+    width: 64px;
+    top: 70px;
+    left: -55px;
+    user-select: none;
+}
+
+.add-info {
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:row-reverse;
+}
+
+.info {
+    width: 40%;
+}
+
+.info1 {
+    width: 700px;
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.info2 {
+    width: 700px;
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.info1:hover,
+.info2:hover {
+    cursor: pointer;
+    background-color: rgba(151, 209, 248, 0.521);
+    border-radius: 10px;
+} 
+
+.wave {
+    margin-left: 100px;
+    width: 40%;
+    height: 300px;
+}
+
+.wave1 {
+    position: relative;
+    top: 0px;
+    width: 200px;
+    height: 100px;
+    user-select: none;
+}
+
+.wave-text1 {
+    position: relative;
+    top: -50px;
+    left: 10px;
+    width: 200px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    user-select: none;
+    color: grey;
+}
+
+.wave-percent1 {
+    position: relative;
+    top: -123px;
+    left: 210px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.wave2 {
+    position: relative;
+    top: -140px;
+    width: 260px;
+    height: 100px;
+    user-select: none;
+}
+
+.wave-text2 {
+    position: relative;
+    top: -190px;
+    left: 10px;
+    width: 200px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    user-select: none;
+    color: grey;
+}
+
+.wave-percent2 {
+    position: relative;
+    top: -265px;
+    left: 270px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.wave3 {
+    position: relative;
+    top: -285px;
+    width: 330px;
+    height: 110px;
+    user-select: none;
+}
+
+.wave-text3 {
+    position: relative;
+    top: -338px;
+    left: 10px;
+    width: 200px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    user-select: none;
+    color: grey;
+}
+
+.wave-percent3 {
+    position: relative;
+    top: -413px;
+    left: 340px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+    font-weight: 500;
+    user-select: none;
+}

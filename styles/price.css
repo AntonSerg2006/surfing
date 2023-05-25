@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.home img {
+    width: 40px;
+    padding: 10px;
+    user-select: none;
+}
+
+.heading {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    font-style: normal;
+    font-family: 'Raleway';
+    font-size: 50px;
+}
+
+.line { 
+        position: relative;
+        left: -10px;
+        top: 25px;
+    
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 72px;
+        font-style: normal;
+        font-family: 'Raleway';
+        user-select: none;
+        color: rgb(0, 117, 226);
+    }
+
+.info {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+.heading-info {
+    position: relative;
+    left: 65px;
+
+    font-style: normal;
+    font-size: 34px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+}
+
+.standart {
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.text-info:hover {
+    cursor: pointer;
+
+    background-color: rgba(151, 209, 248, 0.521);
+    border-radius: 10px;
+}
+
+
+.inclusive {
+    top: 400px;
+    left: 780px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+
+.profi {
+    top: 400px;
+    left: 1180px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+}
+
+.price {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.price1 {
+    position: relative;
+    left: -80px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    border-bottom: 2px solid red;
+}
+
+.price2 {
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    border-bottom: 2px solid red;
+}
+
+.price3 {
+    position: relative;
+    left: 40px;
+
+    font-style: normal;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    border-bottom: 2px solid red;
+}
+
+
+span {
+    position: relative;
+    top: -2px;
+    left: -3px;
+
+    font-size: 20px;
+}

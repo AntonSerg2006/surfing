@@ -1,144 +1,479 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
 }
 .background {
-    background-image: url(../images/serfing.png);
-    max-width: 100%;
-    min-width: 10%;
-    width: 1920px;
-    max-height: 100%;
-    min-height: 10%;
-    height: 980px;
-}
-
-body {
-    left: 0px;
-    top: 0px;
-    user-select: none;
-    overflow: hidden;
+  background-image: url(/images/serfing.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 980px;
 }
 
 .gradient {
-    display: inline-block;
-    max-width: 100%;
-    min-width: 10%;
-    width: 1920px;
-    height: 491px;
-    left: 0px;
-    top: 0px;
+  display: inline-block;
+  max-width: 100%;
+  min-width: 10%;
+  width: 1920px;
+  height: 491px;
+  left: 0px;
+  top: 0px;
 
-    background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+  background: linear-gradient(
+    180deg,
+    #01353e 0%,
+    rgba(51, 51, 51, 0.595076) 31.64%,
+    rgba(51, 51, 51, 0.222586) 74.35%,
+    rgba(51, 51, 51, 0) 99.87%
+  );
+}
+
+#top {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
-    display: flex;
-    margin: auto;
-    width: 100%;
-    height: 100px;
+  display: flex;
+  width: 35%;
+  height: 80px;
+  margin: 250px;
+  margin-left: 110px;
+  justify-content: center;
 }
 
 nav {
-    position: relative;
-    font-size: 13pt;
-    top: 15px;
+  position: relative;
+  font-size: 13pt;
+  top: 15px;
 }
 
-
 nav ul {
-    padding: 0;
-    margin: 0 auto;
-    width: 600px;
-    height: 40px;
+  padding: 0;
+  margin: 0 auto;
+  width: 600px;
+  height: 40px;
 }
 
 nav li {
-    display: inline;
-    float: left;
+  display: inline;
+  float: left;
 }
 
 nav a {
-    color: #ffffff;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    text-decoration: none;
-    line-height: 40px;
-    font-family: 'Roboto';
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  font-family: "Roboto";
 }
 
 nav li a {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav li:last-child a {
-    border-right: 0;
+  border-right: 0;
 }
 
-nav a:hover, nav a:active {
-    border-bottom: 2px solid #0b65ec;
+nav a:hover,
+nav a:active {
+  border-bottom: 2px solid #0b65ec;
 }
 
 .logo {
-    display: flex;
-    margin: auto;
-    width: 55%;
-    height: 100px;
+  display: flex;
+  width: 7%;
+  height: 100px;
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffffff;
 }
 
-.w1 {
-    position: relative;
-    top: -75px;
-    left: 40px;
-
-    font-style: normal;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 40px;
-
-    color: #ffffffff;
+.w-first {
+  position: relative;
+  top: 10px;
+  left: 60px;
 }
 
-.w2 {
-    position: relative;
-    top: -48px;
-    left: -28px;
-
-    font-style: normal;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 40px;
-
-    color: #ffffffff;
+.w-second {
+  position: relative;
+  top: 39px;
+  right: 9px;
 }
 
-.text {
-    display: flex;
-    margin: auto;
+#text {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#text h1 {
+  font-family: "Raleway";
+  font-size: 200px;
+  font-style: normal;
+  color: #000000;
+}
+
+#text p {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  color: #000000;
+}
+
+@media screen and (max-width: 1280px) {
+  .background {
+    height: 900px;
+  }
+
+  #top {
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: start;
     width: 100%;
-    height: 550px;
-    justify-content: center;
-    align-items: center;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 16px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 7px;
+    left: 40px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 31px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 86%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  #text {
+    height: 300px;
+  }
+
+  #text h1 {
+    font-size: 150px;
+  }
+
+  #text p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .background {
+    height: 900px;
+  }
+
+  #top {
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 16px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 7px;
+    left: 40px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 31px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 80%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  #text {
+    height: 300px;
+  }
+
+  #text h1 {
+    font-size: 140px;
+  }
+
+  #text p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .background {
+    height: 900px;
+  }
+
+  #top {
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 13px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 29px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 84%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 13px;
+  }
+
+  #text h1 {
+    font-size: 120px;
+  }
+
+  #text p {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .background {
+    height: 820px;
+  }
+
+  #top {
     flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 13px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 29px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 11px;
+  }
+
+  nav a {
+    line-height: 25px;
+    width: 200px;
+  }
+
+  nav ul {
+    width: 400px;
+    height: 40px;
+  }
+
+  #text h1 {
+    font-size: 120px;
+  }
+
+  #text p {
+    font-size: 17px;
+  }
 }
 
-.text h1 {
-    font-family: 'Raleway';
-    font-size: 220px;
-    font-style: normal;
-    color: #000000;
+@media screen and (max-width: 480px) {
+  .background {
+    height: 820px;
+  }
+
+  #top {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 13px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 29px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 11px;
+  }
+
+  nav a {
+    line-height: 25px;
+    width: 200px;
+  }
+
+  nav ul {
+    width: 400px;
+    height: 40px;
+  }
+
+  #text h1 {
+    font-size: 90px;
+  }
+
+  #text p {
+    font-size: 14px;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  .background {
+    height: 820px;
+  }
 
-.text p {
-    font-family: 'Roboto';
-    font-size: 24px;
-    font-style: normal;
-    color: #000000;
+  #top {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 200px;
+  }
+
+  .logo {
+    font-size: 13px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .w-first {
+    position: relative;
+    top: 10px;
+    left: 30px;
+  }
+
+  .w-second {
+    position: relative;
+    top: 29px;
+    right: 15px;
+  }
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+  }
+
+  nav {
+    font-size: 11px;
+  }
+
+  nav a {
+    line-height: 25px;
+    width: 200px;
+  }
+
+  nav ul {
+    width: 400px;
+    height: 40px;
+  }
+
+  #text h1 {
+    font-size: 90px;
+  }
+
+  #text p {
+    font-size: 14px;
+  }
 }
-
-

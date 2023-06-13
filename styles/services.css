@@ -4,23 +4,18 @@
   align-items: end;
   width: 100%;
   margin: auto;
+  font-family: "Raleway";
+  font-style: normal;
 }
 
-h1 {
-  font-style: normal;
-  font-family: "Raleway";
+.heading h1 {
   font-size: 40px;
 }
 
-.line {
+.heading h2 {
   position: relative;
-  top: 60px;
-
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 72px;
-  font-style: normal;
-  font-family: "Raleway";
+  top: 40px;
+  font-size: 45px;
   user-select: none;
   color: rgb(0, 117, 226);
 }
@@ -32,53 +27,40 @@ h1 {
   margin: auto;
   justify-content: space-evenly;
   align-items: center;
+  font-style: normal;
+  font-family: "Roboto Condensed";
 }
 
 .info-about-services {
   display: flex;
   flex-direction: column;
+  width: 400px;
+  height: 170px;
 }
 
 .info-heading {
-  top: 250px;
-  left: 400px;
-
-  font-style: normal;
-  font-family: "Roboto Condensed";
+  display: flex;
+  flex-direction: row;
 }
 
-.info-text {
-  width: 400px;
-  top: 350px;
-  left: 280px;
-
-  font-style: normal;
-  font-family: "Roboto Condensed";
+.text img {
+  margin-right: 10px;
+  user-select: none;
 }
 
 .sun {
-  position: relative;
   width: 50px;
-  height: 50px;
-  top: 55px;
-  left: -55px;
-  user-select: none;
+  height: 55px;
 }
 
 .ticket {
-  position: relative;
   width: 50px;
-  top: 65px;
-  left: -55px;
-  user-select: none;
+  height: 55px;
 }
 
 .surfing {
-  position: relative;
-  width: 64px;
-  top: 70px;
-  left: -55px;
-  user-select: none;
+  width: 45px;
+  height: 50px;
 }
 
 .add-info {
@@ -86,7 +68,7 @@ h1 {
   box-sizing: border-box;
   margin: auto;
   width: 100%;
-  height: 400px;
+  height: 340px;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
@@ -103,134 +85,96 @@ h1 {
 .statistics {
   display: flex;
   flex-direction: column;
-  width: 23%;
-  height: 320px;
+  width: 30%;
+  height: 350px;
 }
 
 .wave {
   display: flex;
-  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  user-select: none;
 }
 
 .info-wave {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100px;
+  height: 120px;
 }
 
 .wave-text {
   display: flex;
-  width: 60%;
+  width: 100%;
   height: 30px;
   font-style: normal;
   font-family: "Roboto Condensed";
   font-size: 16px;
-  user-select: none;
-  color: grey;
+  color: rgba(128, 128, 128, 0.74);
 }
 
-.info-wave h2 {
-  position: relative;
-  bottom: 108px;
-  width: 10%;
+.wave-percent {
+  margin: 5px 0px 0px 10px;
+  width: 40px;
   height: 30px;
   font-style: normal;
   font-family: "Roboto Condensed";
   font-size: 25px;
   font-weight: 500;
-  user-select: none;
-}
-
-.wave-percent-1 {
-  left: 210px;
-}
-
-.wave-percent-2 {
-  left: 280px;
-}
-.wave-percent-3 {
-  left: 340px;
 }
 
 .wave1 {
   bottom: 20px;
   width: 200px;
   height: 40px;
-  user-select: none;
 }
 
 .wave2 {
   bottom: 20px;
   width: 270px;
   height: 42px;
-  user-select: none;
 }
 
 .wave3 {
   bottom: 20px;
   width: 330px;
   height: 45px;
-  user-select: none;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
   body {
     overflow: visible;
   }
-  .home img {
-    width: 25px;
-    padding: 6px;
-  }
 
   .heading {
-    height: 50px;
+    height: 100px;
   }
 
   .heading h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .heading h2 {
-    font-size: 50px;
-    top: 50px;
+    font-size: 35px;
+    top: 25px;
   }
 
   .text {
-    margin: 10px;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
+    flex-wrap: wrap;
+    margin-left: 40px;
     width: 100%;
-    height: 250px;
+    height: 500px;
     font-size: 17px;
-  }
-
-  .info-about-services {
-    justify-content: end;
-    width: 45%;
-    height: 200px;
   }
 
   .info-text {
     width: 350px;
   }
 
-  .sun {
-    left: 160px;
-  }
-
-  .ticket {
-    top: 55px;
-    left: 256px;
-  }
-  .surfing {
-    top: 63px;
-    left: 280px;
-  }
-
   .add-info {
-    justify-content: start;
     flex-direction: column-reverse;
     height: 550px;
   }
@@ -240,40 +184,6 @@ h1 {
     height: 300px;
   }
 
-  .wave1 {
-    width: 200px;
-    height: 40px;
-  }
-
-  .wave2 {
-    width: 290px;
-    height: 40px;
-  }
-
-  .wave3 {
-    width: 350px;
-    height: 45px;
-  }
-  .wave-text {
-    font-size: 18px;
-  }
-
-  .info-wave h2 {
-    bottom: 110px;
-    font-size: 22px;
-  }
-
-  .wave-percent-1 {
-    left: 210px;
-  }
-
-  .wave-percent-2 {
-    left: 300px;
-  }
-  .wave-percent-3 {
-    left: 360px;
-  }
-
   .info {
     font-size: 18px;
     width: 95%;
@@ -281,143 +191,10 @@ h1 {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    overflow: visible;
-  }
-  .home img {
-    width: 25px;
-    padding: 6px;
-  }
-
-  .heading {
-    height: 50px;
-  }
-
-  .heading h1 {
-    font-size: 30px;
-  }
-
-  .heading h2 {
-    font-size: 40px;
-    top: 50px;
-  }
-
+@media screen and (max-width: 768px) {
   .text {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 550px;
-    font-size: 17px;
-  }
-
-  .info-about-services {
-    justify-content: end;
-    width: 45%;
-    height: 200px;
-  }
-
-  .info-text {
-    width: 350px;
-  }
-
-  .sun {
-    left: 160px;
-  }
-
-  .ticket {
-    top: 55px;
-    left: 256px;
-  }
-  .surfing {
-    top: 63px;
-    left: 280px;
-  }
-
-  .add-info {
-    justify-content: start;
-    flex-direction: column-reverse;
-    height: 550px;
-  }
-
-  .statistics {
-    width: 95%;
-    height: 300px;
-  }
-
-  .wave1 {
-    width: 200px;
-    height: 40px;
-  }
-
-  .wave2 {
-    width: 290px;
-    height: 40px;
-  }
-
-  .wave3 {
-    width: 350px;
-    height: 45px;
-  }
-  .wave-text {
-    font-size: 18px;
-  }
-
-  .info-wave h2 {
-    bottom: 110px;
-    font-size: 22px;
-  }
-
-  .wave-percent-1 {
-    left: 210px;
-  }
-
-  .wave-percent-2 {
-    left: 300px;
-  }
-  .wave-percent-3 {
-    left: 360px;
-  }
-
-  .info {
-    font-size: 18px;
-    width: 95%;
-    height: 220px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    overflow: visible;
-  }
-  .home img {
-    width: 25px;
-    padding: 6px;
-  }
-
-  .heading {
-    height: 50px;
-  }
-
-  .heading h1 {
-    font-size: 30px;
-  }
-
-  .heading h2 {
-    font-size: 40px;
-    top: 50px;
-  }
-
-  .text {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 450px;
-    font-size: 13px;
+    margin: 0;
+    font-size: 15px;
   }
 
   .info-about-services {
@@ -429,101 +206,48 @@ h1 {
     width: 300px;
   }
 
+  .text img {
+    margin: 5px 10px 0px 0px;
+  }
+
   .sun {
-    left: 130px;
+    width: 40px;
+    height: 45px;
   }
 
   .ticket {
-    left: 200px;
-    top: 55px;
-  }
-  .surfing {
-    top: 63px;
-    left: 213px;
-  }
-
-  .add-info {
-    justify-content: start;
-    flex-direction: column-reverse;
-    height: 550px;
-  }
-
-  .statistics {
-    width: 95%;
-    height: 300px;
-  }
-
-  .wave1 {
-    width: 150px;
-    height: 40px;
-  }
-
-  .wave2 {
-    width: 210px;
-    height: 40px;
-  }
-
-  .wave3 {
-    width: 270px;
+    width: 40px;
     height: 45px;
   }
-  .wave-text {
-    font-size: 15px;
-  }
 
-  .info-wave h2 {
-    bottom: 100px;
-    font-size: 22px;
-  }
-
-  .wave-percent-1 {
-    left: 155px;
-  }
-
-  .wave-percent-2 {
-    left: 215px;
-  }
-  .wave-percent-3 {
-    left: 275px;
+  .surfing {
+    width: 35px;
+    height: 40px;
   }
 
   .info {
-    font-size: 14px;
-    width: 95%;
-    height: 220px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    overflow: visible;
-  }
-
-  .home img {
-    width: 25px;
-    padding: 6px;
-  }
-
-  .heading {
-    height: 50px;
-  }
-
   .heading h1 {
     font-size: 25px;
   }
 
   .heading h2 {
-    font-size: 40px;
-    top: 50px;
+    font-size: 30px;
+    top: 25px;
+  }
+
+  .info-heading {
+    font-size: 12px;
   }
 
   .text {
-    margin: 10px;
-    flex-direction: column;
-    justify-content: start;
-    width: 100%;
-    height: 550px;
-    font-size: 13px;
+    justify-content: center;
+    height: 570px;
+    font-size: 14px;
   }
 
   .info-about-services {
@@ -531,176 +255,87 @@ h1 {
     height: 150px;
   }
 
-  .info-text {
-    width: 300px;
-  }
-
-  .sun {
-    left: 130px;
-  }
-
-  .ticket {
-    left: 200px;
-    top: 55px;
-  }
-  .surfing {
-    top: 63px;
-    left: 213px;
-  }
-
-  .add-info {
-    justify-content: start;
-    flex-direction: column-reverse;
-    height: 550px;
-  }
-
   .statistics {
     width: 95%;
     height: 300px;
   }
 
+  .wave-text {
+    font-size: 14px;
+  }
+
   .wave1 {
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 30px;
   }
 
   .wave2 {
-    width: 210px;
-    height: 40px;
+    width: 250px;
+    height: 33px;
   }
 
   .wave3 {
-    width: 270px;
-    height: 45px;
-  }
-  .wave-text {
-    font-size: 15px;
+    width: 310px;
+    height: 38px;
   }
 
-  .info-wave h2 {
-    bottom: 100px;
-    font-size: 22px;
-  }
-
-  .wave-percent-1 {
-    left: 155px;
-  }
-
-  .wave-percent-2 {
-    left: 215px;
-  }
-  .wave-percent-3 {
-    left: 275px;
+  .wave-percent {
+    font-size: 20px;
   }
 
   .info {
     font-size: 14px;
-    width: 95%;
-    height: 220px;
   }
 }
 
-@media screen and (max-width: 380px) {
-  body {
-    overflow: visible;
-  }
-
-  .home img {
-    width: 20px;
-    padding: 3px;
-  }
-
+@media screen and (max-width: 320px) {
   .heading {
-    height: 80px;
+    height: 50px;
   }
-
   .heading h1 {
-    font-size: 25px;
+    font-size: 21px;
   }
 
   .heading h2 {
-    font-size: 40px;
-    top: 50px;
+    font-size: 25px;
+    top: 25px;
   }
 
   .text {
-    flex-direction: column;
     justify-content: start;
+    margin-left: 10px;
     width: 100%;
     height: 550px;
     font-size: 13px;
   }
 
-  .info-about-services {
-    width: 80%;
-    height: 150px;
-  }
-
-  .info-text {
-    width: 300px;
-  }
-
-  .sun {
-    left: 130px;
-  }
-
-  .ticket {
-    left: 200px;
-    top: 55px;
-  }
-  .surfing {
-    top: 63px;
-    left: 213px;
-  }
-
   .add-info {
-    justify-content: start;
-    flex-direction: column-reverse;
-    height: 580px;
+    height: 550px;
   }
-
-  .statistics {
-    width: 95%;
-    height: 300px;
+  .wave-text {
+    font-size: 13px;
   }
 
   .wave1 {
     width: 150px;
-    height: 40px;
+    height: 25px;
   }
 
   .wave2 {
-    width: 210px;
-    height: 40px;
+    width: 190px;
+    height: 28px;
   }
 
   .wave3 {
-    width: 270px;
-    height: 45px;
-  }
-  .wave-text {
-    font-size: 15px;
+    width: 230px;
+    height: 30px;
   }
 
-  .info-wave h2 {
-    bottom: 100px;
-    font-size: 22px;
-  }
-
-  .wave-percent-1 {
-    left: 155px;
-  }
-
-  .wave-percent-2 {
-    left: 215px;
-  }
-  .wave-percent-3 {
-    left: 275px;
+  .wave-percent {
+    font-size: 18px;
   }
 
   .info {
-    font-size: 14px;
-    width: 95%;
-    height: 260px;
+    font-size: 13px;
   }
 }
